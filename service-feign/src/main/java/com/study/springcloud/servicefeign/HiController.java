@@ -19,7 +19,7 @@ public class HiController {
     @Autowired
     SchedualServiceHi schedualServiceHi;
 
-    @RequestMapping(value = "/hi", method = RequestMethod.GET)
+    @RequestMapping(value = "/feign", method = RequestMethod.GET)
     public String sayHi(@RequestParam String name) {
         return schedualServiceHi.sayHiFromClientOne(name) + " Feign";
     }
