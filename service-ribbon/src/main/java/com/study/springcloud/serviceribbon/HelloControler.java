@@ -18,7 +18,7 @@ public class HelloControler {
     @Autowired
     HelloService helloService;
 
-    @RequestMapping(value = "/hi")
+    @RequestMapping(value = "/ribbon")
     public String hi(@RequestParam String name) {
         return helloService.hiService(name) + " Ribbon";
     }
